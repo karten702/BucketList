@@ -80,12 +80,8 @@ public class MainActivity extends AppCompatActivity implements BucketListAdapter
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(MainActivity.this, NewBucketItem.class);
                 startActivityForResult(intent, REQUESTCODE);
-
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
             }
         });
     }
